@@ -64,8 +64,8 @@ class HomeFragment : Fragment() {
     private fun onClicks(): View.OnClickListener {
         return View.OnClickListener {
             when (it.id) {
-                R.id.br1 -> startStopService(4)
-                R.id.br2 -> startStopService(5)
+                R.id.br2 -> startStopService(4)
+                R.id.br1 -> startStopService(5)
                 R.id.br3 -> startStopService(12)
                 R.id.br4 -> startStopService(14)
 
