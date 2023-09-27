@@ -1,13 +1,15 @@
 package com.stepa0751.fourreleydriver.ui.home
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class HomeViewModel : ViewModel() {
+open class HomeViewModel : ViewModel(
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is home Fragment"
+){
+    val message2: MutableLiveData<String>by lazy {
+        MutableLiveData<String>()
     }
-    val text: LiveData<String> = _text
+    val message: MutableLiveData<String> by lazy {
+        MutableLiveData<String>()
+    }
 }
